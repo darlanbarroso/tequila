@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classify Image</title>
+    <link rel="icon" href="../static/ico/cat-purple.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Envie uma Imagem para Predição</h1>
+
+        <!-- Botão para alternar o tema -->
+        <button id="theme-toggle">🌞</button>
+
+        <form id="upload-form" method="POST" enctype="multipart/form-data">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu usuário" required><br><br>
+            
+            <label for="password">Senha:</label>
+            <div style="display: flex; align-items: center;">
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required style="flex: 1; margin-right: 10px;">
+                <input type="checkbox" id="toggle-password" style="margin: 0;">
+                <label for="toggle-password" style="margin: 0;"></label>
+            </div>
+            <br>
+
+            <label for="image">Selecione uma imagem:</label>
+            <input type="file" name="image" id="image" required><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <hr>
+
+        <h2>Resultado da Predição</h2>
+        <div id="result">
+            <!-- Resultado da predição será exibido aqui -->
+        </div>
+
+        <!-- Barra de carregamento -->
+        <div id="loading" class="loading-bar" style="display: none;">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+torch
+torchvision
+ultralytics
+Flask-Cors
+flask
+flasgger
