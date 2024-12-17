@@ -224,4 +224,11 @@ Na interface do Swagger, você poderá visualizar a descrição de cada endpoint
 3. **Enviar uma requisição**: Para o endpoint `POST /classify`, por exemplo, você poderá fazer o upload de uma imagem diretamente pela interface e ver a previsão retornada em formato JSON.
 4. **Explorar mais funcionalidades**: O Swagger UI também oferece uma maneira de testar outros endpoints, ver as respostas de cada um e entender como a API funciona de maneira interativa.
 
+Você também poderá acessar a documentação da API pelo link a seguir:
+
+```
+https://app.swaggerhub.com/apis/DARLANBARROSOML/bottle-status_api/1.0
+```
+
+
 
