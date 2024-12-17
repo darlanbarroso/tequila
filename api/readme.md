@@ -1,8 +1,8 @@
 
 
-# 🚀 API de Previsão com YOLOv5 🤖
+# 🚀 API de Previsão com YOLOv8 🤖
 
-Este projeto implementa uma API baseada no **Flask** que permite fazer previsões sobre imagens enviadas via requisição HTTP. O modelo de **classificação de imagens YOLOv5** foi treinado para detectar se uma imagem contém uma classe "aberta" ou "fechada". A API também suporta autenticação básica para garantir a segurança ao utilizar os endpoints.
+Este projeto implementa uma API baseada no **Flask** que permite fazer previsões sobre imagens enviadas via requisição HTTP. O modelo de **classificação de imagens YOLOv8** foi treinado para detectar se uma imagem contém uma classe "aberta" ou "fechada". A API também suporta autenticação básica para garantir a segurança ao utilizar os endpoints.
 
 ## 📦 Estrutura do Projeto
 
@@ -11,7 +11,7 @@ A estrutura do projeto é a seguinte:
 ```
 api/
 ├── app.py                  # Código principal da API Flask
-├── best.pt                 # Modelo treinado YOLOv5
+├── best.pt                 # Modelo treinado YOLOv8
 ├── deploy.sh               # Script para deploy no servidor
 ├── Dockerfile              # Arquivo de configuração para criar a imagem Docker
 ├── docs                    # Documentação adicional sobre Docker e Azure
@@ -31,7 +31,7 @@ Este projeto depende das seguintes bibliotecas para funcionar corretamente:
 
 - **Flask**: Framework para construção da API.
 - **Flask-CORS**: Para habilitar o CORS, permitindo que o front-end se comunique com a API sem restrições de origem.
-- **Ultralytics YOLOv5**: Utilizado para carregar e rodar o modelo treinado de detecção de objetos.
+- **Ultralytics YOLOv8**: Utilizado para carregar e rodar o modelo treinado de detecção de objetos.
 - **Pillow**: Para processamento de imagens.
 - **Docker** (opcional): Para deploy no container.
 
@@ -184,22 +184,22 @@ Se você quiser fazer o deploy da aplicação no **Azure**, você pode usar o ar
 
 ### 🔨 Flask API
 
-O **Flask** é usado para criar a API e os endpoints de previsão e saúde. Quando uma imagem é enviada para o endpoint `/classify`, ela é processada e passada para o modelo YOLOv5 para inferência.
+O **Flask** é usado para criar a API e os endpoints de previsão e saúde. Quando uma imagem é enviada para o endpoint `/classify`, ela é processada e passada para o modelo YOLOv8 para inferência.
 
 1. A imagem é recebida no endpoint `/classify`.
 2. A imagem é processada e salva como um arquivo temporário.
-3. O modelo YOLOv5 faz a previsão (aberta ou fechada) na imagem recebida.
+3. O modelo YOLOv8 faz a previsão (aberta ou fechada) na imagem recebida.
 4. A resposta com o nome da classe prevista e a confiança é retornada.
 
-### 🤖 Modelo YOLOv5
+### 🤖 Modelo YOLOv8
 
-O modelo **YOLOv5** foi treinado e salvo no arquivo `best.pt`. Ele é carregado assim que a aplicação é iniciada. O modelo faz a detecção e classificação da imagem enviada.
+O modelo **YOLOv8** foi treinado e salvo no arquivo `best.pt`. Ele é carregado assim que a aplicação é iniciada. O modelo faz a detecção e classificação da imagem enviada.
 
 
 
 ## 📡 Documentação da API com Swagger
 
-A API de Previsão com YOLOv5 oferece uma documentação interativa via **Swagger UI**, que permite explorar os endpoints e realizar requisições diretamente pela interface gráfica.
+A API de Previsão com YOLOv8 oferece uma documentação interativa via **Swagger UI**, que permite explorar os endpoints e realizar requisições diretamente pela interface gráfica.
 
 ### 📝 Acessando a Documentação Swagger
 
