@@ -1,6 +1,6 @@
 # Guia para Deploy de Aplicação Flask com Docker e Azure e Plano de Escalabilidade da API
 
-Este guia descreve como criar e implantar uma aplicação Flask utilizando Docker e Azure.
+Este guia descreve como criar e implantar uma aplicação Flask utilizando Docker e Azure e detalha um plano de escabilidade da API
 
 ---
 
@@ -95,7 +95,6 @@ O script `.sh` é baseado no ano, mês, hora, minuto e segundo. Toda vez que fiz
 ---
 
 ## Plano de escalabilidade da API
-Este plano detalha como escalar a API baseada nos requisitos de High-Throughput Scenarios, Database Design, Monitoring and Metrics, Security, e Documentation. O foco é no uso de ferramentas e serviços do Azure para garantir alta disponibilidade, desempenho e escalabilidade.
 
 Este plano detalha como escalar a API baseada nos requisitos de **High-Throughput Scenarios**, **Database Design**, **Monitoring and Metrics**, **Security**, e **Documentation**. O foco é no uso de ferramentas e serviços do **Azure** para garantir alta disponibilidade, desempenho e escalabilidade.
 
