@@ -1,8 +1,8 @@
 
 
-# 🥃 Projeto Tequila: API de Predição com YOLOv5 🤖
+# 🥃 Projeto Tequila: API de Predição com YOLOv8 🤖
 
-O **Projeto Tequila** é uma solução completa para a detecção e classificação de imagens utilizando o modelo **YOLOv5**. O sistema oferece uma API baseada em **Flask** para processar imagens e prever se uma imagem representa uma classe "aberta" ou "fechada". O projeto também inclui funcionalidades para treinar e validar o modelo, além de uma interface para realizar testes de carga e deploy em ambientes como **Azure**.
+O **Projeto Tequila** é uma solução completa para a detecção e classificação de imagens utilizando o modelo **YOLOv8**. O sistema oferece uma API baseada em **Flask** para processar imagens e prever se uma imagem representa uma classe "aberta" ou "fechada". O projeto também inclui funcionalidades para treinar e validar o modelo, além de uma interface para realizar testes de carga e deploy em ambientes como **Azure**.
 
 ---
 
@@ -14,7 +14,7 @@ O projeto é dividido em várias pastas e arquivos para diferentes funcionalidad
 .
 ├── api                         # API Flask para predição de imagens
 │   ├── app.py                  # Código principal da API Flask
-│   ├── best.pt                 # Modelo treinado YOLOv5
+│   ├── best.pt                 # Modelo treinado YOLOv8
 │   ├── deploy.sh               # Script para deploy no servidor
 │   ├── Dockerfile              # Arquivo para construir a imagem Docker
 │   ├── docs                    # Documentação adicional sobre Docker e Azure
@@ -47,9 +47,9 @@ O projeto é dividido em várias pastas e arquivos para diferentes funcionalidad
 
 ## 🚀 Funcionalidades do Projeto
 
-### 1. **API de Predição de Imagens com YOLOv5**
+### 1. **API de Predição de Imagens com YOLOv8**
 
-A API Flask oferece um endpoint para enviar imagens e obter uma previsão sobre a classe da imagem ("aberta" ou "fechada"). A predição é feita utilizando um modelo **YOLOv5** treinado previamente.
+A API Flask oferece um endpoint para enviar imagens e obter uma previsão sobre a classe da imagem ("aberta" ou "fechada"). A predição é feita utilizando um modelo **YOLOv8** treinado previamente.
 
 - **Endpoint `/predict`**: Recebe uma imagem, processa e retorna a previsão.
 - **Endpoint `/health`**: Verifica se a API está funcionando corretamente.
@@ -57,7 +57,7 @@ A API Flask oferece um endpoint para enviar imagens e obter uma previsão sobre 
 
 ### 2. **Treinamento do Modelo**
 
-O modelo YOLOv5 foi treinado para classificar imagens nas classes "aberta" e "fechada". O treinamento foi feito usando um conjunto de dados customizado do **Roboflow**, e o modelo resultante (`best.pt`) é utilizado na API para fazer as predições.
+O modelo YOLOv8 foi treinado para classificar imagens nas classes "aberta" e "fechada". O treinamento foi feito usando um conjunto de dados customizado do **Roboflow**, e o modelo resultante (`best.pt`) é utilizado na API para fazer as predições.
 
 - **Notebook `model_training.ipynb`**: Contém o código para treinar o modelo utilizando o conjunto de dados.
 - **Script `download_data.py`**: Baixa e prepara o conjunto de dados para treinamento.
@@ -136,7 +136,7 @@ Depois, acesse a interface de controle do Locust em [http://localhost:8089](http
 
 ### 4. **Treinamento do Modelo**
 
-O treinamento do modelo pode ser feito através do notebook `notebooks/model_training.ipynb`. Siga os passos dentro do notebook para treinar o modelo YOLOv5 com o conjunto de dados do **Roboflow**.
+O treinamento do modelo pode ser feito através do notebook `notebooks/model_training.ipynb`. Siga os passos dentro do notebook para treinar o modelo YOLOv8 com o conjunto de dados do **Roboflow**.
 
 ---
 
